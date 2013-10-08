@@ -6,7 +6,8 @@
 
   {% bootstrap_css %}
   {% bootstrap_javascript jquery=True %}
-
+  {% load staticfiles %}
+  <link rel='stylesheet' type='text/css' href="{% static 'app/custom.css' %}" media='handheld,all' />
   {% block head %}{% endblock %}
 </head>
 <body>
